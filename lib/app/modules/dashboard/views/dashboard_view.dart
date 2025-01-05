@@ -40,7 +40,7 @@ class DashboardView extends GetView<DashboardController> {
           children: [
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-              margin: const EdgeInsets.only(bottom: 20),
+              // margin: const EdgeInsets.only(bottom: 20),
               decoration: BoxDecoration(
                 color: Theme.of(context).cardColor,
                 borderRadius: const BorderRadius.only(
@@ -98,8 +98,9 @@ class DashboardView extends GetView<DashboardController> {
                   children: [
                     Expanded(
                       child: ListView.separated(
+                        clipBehavior: Clip.antiAliasWithSaveLayer,
                         itemCount: 20,
-                        padding: EdgeInsets.only(bottom: 75),
+                        padding: EdgeInsets.only(bottom: 85, top: 20),
                         itemBuilder: (context, index) {
                           return BusinessCardTile();
                         },
