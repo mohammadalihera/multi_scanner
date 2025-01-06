@@ -51,7 +51,7 @@ class HomeView extends GetView<HomeController> {
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
         floatingActionButton: Container(
-          margin: EdgeInsets.only(bottom: 8),
+          margin: const EdgeInsets.only(bottom: 8),
           height: 50,
           width: 50,
           decoration: BoxDecoration(
@@ -61,7 +61,7 @@ class HomeView extends GetView<HomeController> {
           child: IconButton(
             color: Colors.black,
             onPressed: () {},
-            icon: Icon(Icons.qr_code_scanner),
+            icon: const Icon(Icons.qr_code_scanner),
           ),
         ),
       ),
